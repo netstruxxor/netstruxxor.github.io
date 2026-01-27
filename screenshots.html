@@ -1,87 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Screenshots Gallery</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #eee;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #00ffff;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-    .screenshot {
-      background-color: #222;
-      border-radius: 8px;
-      padding: 15px;
-      box-shadow: 0 0 10px #000;
-    }
-    .screenshot img {
-      width: 100%;
-      border-radius: 4px;
-    }
-    .caption {
-      margin-top: 10px;
-      font-size: 0.95em;
-      color: #ccc;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screenshots Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #eee;
+            margin: 0;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00ffff;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00ffff;
+        }
+
+        nav a {
+            color: #eee;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffff;
+            margin-top: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .screenshot {
+            background-color: #222;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px #000;
+        }
+
+        .screenshot img {
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #ccc;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Foksel Screenshots Gallery</h1>
-  <div class="gallery">
-    <div class="screenshot">
-      <img src="images/ADManagementGroupProp.png" alt="ADManagementGroupProp">
-      <div class="caption">Active Directory Group Properties panel showing configuration and permission details.</div>
+
+    <!-- Consistent Header -->
+    <header>
+        <div class="logo">Foksel</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Product Information</a>
+            <a href="documents.html">Documents</a>
+            <a href="download.html">Download</a>
+            <a href="license.html">Software License Agreement</a>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="screenshots.html">Screenshots</a>
+        </nav>
+    </header>
+
+    <h1>Foksel Screenshots Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="screenshot">
+            <a href="images/ADManagementGroupProp.png" target="_blank">
+                <img src="images/ADManagementGroupProp.png" alt="ADManagementGroupProp">
+            </a>
+            <div class="caption">Active Directory Group Properties panel showing configuration and permission details.</div>
+        </div>
+
+        <div class="screenshot">
+            <a href="images/ADManagementTab.png" target="_blank">
+                <img src="images/ADManagementTab.png" alt="ADManagementTab">
+            </a>
+            <div class="caption">AD Management tab interface for user, group, and policy control.</div>
+        </div>
+
+        <div class="screenshot">
+            <a href="images/ADNavigator.png" target="_blank">
+                <img src="images/ADNavigator.png" alt="ADNavigator">
+            </a>
+            <div class="caption">Navigator for traversing Active Directory hierarchy and object access.</div>
+        </div>
+
+        <div class="screenshot">
+            <a href="images/CompDash.png" target="_blank">
+                <img src="images/CompDash.png" alt="CompDash">
+            </a>
+            <div class="caption">Compliance dashboard with red/green indicators for system health and policy adherence.</div>
+        </div>
+
+        <div class="screenshot">
+            <a href="images/HomePage.png" target="_blank">
+                <img src="images/HomePage.png" alt="HomePage">
+            </a>
+            <div class="caption">Main landing page with navigation tiles and quick-access panels.</div>
+        </div>
+
+        <div class="screenshot">
+            <a href="images/PerfWindow.png" target="_blank">
+                <img src="images/PerfWindow.png" alt="PerfWindow">
+            </a>
+            <div class="caption">Performance metrics window with line graph and pie chart for system load.</div>
+        </div>
+
+        <div class="screenshot">
+            <a href="images/ScriptStudio.png" target="_blank">
+                <img src="images/ScriptStudio.png" alt="ScriptStudio">
+            </a>
+            <div class="caption">Script development environment for batch and PowerShell automation.</div>
+        </div>
+
+        <div class="screenshot">
+            <a href="images/ShowIdentityAccess.png" target="_blank">
+                <img src="images/ShowIdentityAccess.png" alt="ShowIdentityAccess">
+            </a>
+            <div class="caption">Identity access mappings showing user-resource relationships.</div>
+        </div>
+
+        <div class="screenshot">
+            <a href="images/ShowIdentityAccessScaled.png" target="_blank">
+                <img src="images/ShowIdentityAccessScaled.png" alt="ShowIdentityAccessScaled">
+            </a>
+            <div class="caption">Scaled version of identity access view for improved layout clarity.</div>
+        </div>
+
+        <div class="screenshot">
+            <a href="images/UserPropertiesHistory.png" target="_blank">
+                <img src="images/UserPropertiesHistory.png" alt="UserPropertiesHistory">
+            </a>
+            <div class="caption">Historical changes to user properties including group membership and account status.</div>
+        </div>
+
     </div>
-    <div class="screenshot">
-      <img src="images/ADManagementTab.png" alt="ADManagementTab">
-      <div class="caption">AD Management tab interface for user, group, and policy control.</div>
-    </div>
-    <div class="screenshot">
-      <img src="images/ADNavigator.png" alt="ADNavigator">
-      <div class="caption">Navigator for traversing Active Directory hierarchy and object access.</div>
-    </div>
-    <div class="screenshot">
-      <img src="images/CompDash.png" alt="CompDash">
-      <div class="caption">Compliance dashboard with red/green indicators for system health and policy adherence.</div>
-    </div>
-    <div class="screenshot">
-      <img src="images/HomePage.png" alt="HomePage">
-      <div class="caption">Main landing page with navigation tiles and quick-access panels.</div>
-    </div>
-    <div class="screenshot">
-      <img src="images/PerfWindow.png" alt="PerfWindow">
-      <div class="caption">Performance metrics window with line graph and pie chart for system load.</div>
-    </div>
-    <div class="screenshot">
-      <img src="images/ScriptStudio.png" alt="ScriptStudio">
-      <div class="caption">Script development environment for batch and PowerShell automation.</div>
-    </div>
-    <div class="screenshot">
-      <img src="images/ShowIdentityAccess.png" alt="ShowIdentityAccess">
-      <div class="caption">Identity access mappings showing user-resource relationships.</div>
-    </div>
-    <div class="screenshot">
-      <img src="images/ShowIdentityAccessScaled.png" alt="ShowIdentityAccessScaled">
-      <div class="caption">Scaled version of identity access view for improved layout clarity.</div>
-    </div>
-    <div class="screenshot">
-      <img src="images/UserPropertiesHistory.png" alt="UserPropertiesHistory">
-      <div class="caption">Historical changes to user properties including group membership and account status.</div>
-    </div>
-  </div>
+
 </body>
 </html>
